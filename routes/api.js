@@ -13,8 +13,8 @@ const client = mongodb.MongoClient;
 //-------------------END OF TOC-------------------
 
 
-//const dburl = process.env.DB_URL ||
-const dburl = "mongodb://localhost:27017";
+const dburl = process.env.DB_URL || "mongodb://localhost:27017";
+//const dburl = "mongodb://localhost:27017";
 
 let router = express.Router();
 

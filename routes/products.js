@@ -2,8 +2,9 @@ const dotenv = require("dotenv").config();
 const mongodb = require('mongodb');
 const client = mongodb.MongoClient;
 
-// const dburl = process.env.DB_URL ||;
-const dburl = "mongodb://localhost:27017"
+const dburl = process.env.DB_URL || "mongodb://localhost:27017";
+//const dburl = "mongodb://localhost:27017";
+
 const express = require('express');
 let router = express.Router();
 
