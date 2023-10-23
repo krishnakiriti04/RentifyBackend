@@ -77,8 +77,8 @@ register.post(async(req, res) => {
 
 //razorpay secret keys
 const keys = {
-    id: 'rzp_test_5ZzNWVi2y3Kd07',
-    secretkey: 'VWaUdZdgGhgGKXsCIcXC6c9W'
+    id: process.env.RZP_KEY_ID,
+    secretkey: process.env.RZP_SECRET_KEY
 }
 
 //creating the instance
